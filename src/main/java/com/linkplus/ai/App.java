@@ -8,7 +8,7 @@ public class App {
         System.out.println("1. Po ngarkoj dataset-in...");
         Instances data = DataLoader.load("src/main/resources/SMSSpamCollection");
         System.out.println("Data instances: " + data.numInstances());
-
+// i kem bo keto printa per me kuptu errorin e mosprocesimit
         System.out.println("2. Po bej preprocessing...");
         Instances processed = Preprocessor.apply(data);
         System.out.println("Processed instances: " + processed.numInstances());
