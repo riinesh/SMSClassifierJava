@@ -1,0 +1,27 @@
+ DataLoader
+   Pergjegjes per ngarkimin e datasetit nga file (psh SMSSpamCollection)
+   Kthen objekte Instances te weka
+
+ Preprocessor
+    Perpunon datasetin (psh heq fjale te zakonshme, normaliziim, tokenization)
+    Kthen dataset te paster për trajnim
+
+ Trainer
+    Trajnon modelin NaiveBayes nga dataseti i perpunuar
+   Kthen nje objekt NaiveBayes te trajnuar
+
+ Evaluator
+    Evaluon performancen e modelit mbi datasetin
+    Printon statistika (accuracy, precision, recall)
+
+ Predictor
+   Merr nje mesazh të ri si input
+    Parashikon klasen e mesazhit (spam,ham) duke perdorur modelin NaiveBayes
+
+
+Ky projekt realizon nje sistem klasifikimi te mesazheve SMS ne spam dhe ham duke perdorur machine learning klasik me Weka.
+Ai perpunon te dhenat, trajnon nje model NaiveBayes, kontrollon performancen e tij dhe mund te parashikoje nese nje mesazh i ri
+ eshte spam apo jo. Projekti implementon pipeline-in e plote nga perpunimi i te dhenave deri te predikimi
+  dhe sherben si baze per zhvillime te metejshme ne klasifikim tekstesh.
+
+  
